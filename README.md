@@ -1,4 +1,4 @@
-express --no-view .
+express --no-view .  OR npx express-generator
 
 "# JS-Notes"
 
