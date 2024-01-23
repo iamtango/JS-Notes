@@ -62,3 +62,80 @@ undefined
 # Arrays
 
     Reference Type
+    Mutulabe
+    it is Object Type
+
+.push() can able to change the original array and all the element to its end
+.pop() can be used to remove elements from the last of the array and also able to return the last element
+.unshift() can be used to add a new element to the start of the array
+.shift() can be used to remove elements from the first of the array and also able to return the first element
+
+push & pop is much faster than shift & unshift
+
+# Primitve vs reference data types
+
+in Primitve data type if ur assigning thr result to another Variable and if u made change in the previous varible then it will not going to change to the next variable. Primitves Store in Stack
+but in reference data type if u made change in the previous varible then it will change to the next variable. Reference data Store in Heap object is also referenced type
+
+# How to clone Array
+
+array1.slice(0)
+[].concat(array1)
+using Spread Operators [...array1]
+
+# for of Loop work same as traditional from loop it iterate from all items in array {work with array}
+
+    for(let fruit of fruits){
+    console.log(fruit.toUpperCase());
+    }
+
+# for in loop gives index when working with Array and give key when working with Object & to it is also use to iterate Object
+
+    for(let index in fruits){
+    console.log(fruits[index]);
+    }
+
+# Array Destructuring
+
+const myArray = ["value1", "value2", "value3","value4"];
+let [myvar1, , myvar3, ...myNewArray] = myArray;
+console.log("value of myvar1", myvar1);
+console.log("value of myvar2", myvar3);
+console.log(myNewArray);
+
+# if u want to add the keyvalue to the object then just add like
+
+    person.{keyName} = "{value}"  OR  person["{keyName}"] ="value"
+
+// how to access data from objects
+using dot notation
+console.log(person.{keyName});
+using brackets notation
+console.log(person["{keyName}"]);
+
+Note: when we have to access the key with more than one word then we use bracket notation
+
+# how to iterate objects
+
+const person = {
+name: "harshit",
+age: 22,
+"person hobbies": ["guitar", "sleeping", "listening music"]
+}
+
+    using for in loop
+
+for(let key in person){
+// console.log(`${key} : ${person[key]}`);
+console.log(key," : " ,person[key]);
+}
+
+    using Object.keys
+
+console.log(Object.keys(person));
+
+    using Object.keys with for of loop
+
+for(let key of Object.keys(person)){
+console.log(person[key]);
+}
