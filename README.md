@@ -1,4 +1,4 @@
-express --no-view .  OR npx express-generator
+express --no-view . OR npx express-generator
 
 "# JS-Notes"
 
@@ -139,3 +139,20 @@ console.log(Object.keys(person));
 for(let key of Object.keys(person)){
 console.log(person[key]);
 }
+
+# Spread Operator
+
+in Array it is used to clone/spread all the item of the Array
+in String if we use spread operator then it will spreadd the item one by one like
+const newArray = [..."123456789"]; also same for array as well
+
+# Functions
+
+Function Declaration :- function functionName(){}  
+Function Expression / Anonymous Function :- const constName = functionName(){}
+Arrow Function :- const constName = () =>{}
+
+# Hoisting
+
+calling before Declaring it work only while declaring function declaration
+while using Variables if u use var then it will give u undefine but instead if u use let or const then it give error
