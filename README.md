@@ -156,3 +156,11 @@ Arrow Function :- const constName = () =>{}
 
 calling before Declaring it work only while declaring function declaration
 while using Variables if u use var then it will give u undefine but instead if u use let or const then it give error
+
+# Lexical Scope
+
+Taking the varible from the lexical environment (where it is defined)(its outer scope)
+
+# Block scope & function scope
+
+let & const are block scope & var is function scope
