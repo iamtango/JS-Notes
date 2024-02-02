@@ -164,3 +164,18 @@ Taking the varible from the lexical environment (where it is defined)(its outer 
 # Block scope & function scope
 
 let & const are block scope & var is function scope
+
+# CallBack function
+
+Taking function as aurgument
+
+# function returnig function
+
+    function myFunc(){
+        function hello(){
+            return "hello world"
+        }
+        return hello;
+    }
+    const ans = myFunc();
+    console.log(ans());
