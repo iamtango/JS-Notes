@@ -179,3 +179,106 @@ Taking function as aurgument
     }
     const ans = myFunc();
     console.log(ans());
+
+# Method of Array
+
+## forEach in JS
+
+it will not create new array and change the existing array
+
+## Map in JS
+
+Always create new Array
+if we donot return anything then it will return undefined so we have to return something
+
+## Filter in JS
+
+Always create new Array
+it will always return boolean value
+
+## Reduce Method in JavaScript
+
+Always create new Array
+it takes 2 parameters i.e (accumulator, currentValue)
+at second time the value of the accumulator will be the value whih is returned by the function
+it is used to reduce and get one result
+
+const numbers = [1,2,3,4,5, 10];
+
+// aim : sum of all the numbers in array
+
+// const sum = numbers.reduce((accumulator, currentValue)=>{
+// return accumulator + currentValue;
+// }, Initial value);
+
+// console.log(sum);
+// accumulator , currentValue, return
+// 1 2 3
+// 3 3 6
+// 6 4 10
+// 10 5 15
+// 15 10 25
+
+## Sort in array
+
+it will change the array
+sort via ASCII code so work for alphabet nicely but not for num and in alphabetical order give high priority to Capital letters
+
+to sort no
+// const numbers = [5,9,1200, 410, 3000];
+// numbers.sort((a,b)=>{
+// return a-b;
+// });
+// numbers.sort((a,b)=>a-b);
+// console.log(numbers);
+eg
+// 1200,410
+// a-b ---> 790
+// a-b ---> postive (greater than 0) ---> b, a
+// 410 , 1200
+
+// a-b ---> negative ----> a,b
+// 5, 9 ---> -4
+
+## find in Array
+
+if first value is true then it will return it and end the array
+if nothing is true then it will return undefined
+
+## every method in the array
+
+if every Element in the array returns true then it will return true otherwise it will return false
+
+## some methods in the array
+
+just like every method in some method if any element in the array is true then it will return true otherwise it will return false
+
+## fill method in the array
+
+// const myArray = new Array(10).fill(0);
+// console.log(myArray);
+
+const myArray = [1,2,3,4,5,6,7,8];
+// value , start , end
+
+myArray.fill(0,2,5);
+console.log(myArray);
+
+## splice method
+
+it will not create new array and change the existing array
+& it will also return the deleted element
+// start , delete , insert
+
+const myArray = ['item1', 'item2', 'item3'];
+
+// delete
+// const deletedItem = myArray.splice(1, 2);
+// console.log("delted item", deletedItem);
+// insert
+// myArray.splice(1, 0,'inserted item');
+
+// insert and delete
+const deletedItem = myArray.splice(1, 2, "inserted item1", "inserted item2")
+console.log("delted item", deletedItem);
+console.log(myArray);
