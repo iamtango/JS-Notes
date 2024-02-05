@@ -89,6 +89,8 @@ using Spread Operators [...array1]
     console.log(fruit.toUpperCase());
     }
 
+Object me for of loop nahi laga skte hai
+
 # for in loop gives index when working with Array and give key when working with Object & to it is also use to iterate Object
 
     for(let index in fruits){
@@ -186,7 +188,7 @@ Taking function as aurgument
 
 it will not create new array and change the existing array
 
-## Map in JS
+## map method in array
 
 Always create new Array
 if we donot return anything then it will return undefined so we have to return something
@@ -282,3 +284,125 @@ const myArray = ['item1', 'item2', 'item3'];
 const deletedItem = myArray.splice(1, 2, "inserted item1", "inserted item2")
 console.log("delted item", deletedItem);
 console.log(myArray);
+
+## iterables
+
+jispe hum for of loop laga sakein
+string , array, Sets are iterable
+
+// const firstName = "Harshit";
+// for(let char of firstName){
+// console.log(char);
+// }
+
+const items = ['item1', 'item2', 'item3'];
+// for(let item of items){
+// console.log(item);
+// }
+
+## array like object
+
+jinke pas length property hoti hai
+aur jiko hum index se access kar sakte hai
+example :- string
+
+// const firstName = "harshit";
+// console.log(firstName.length);
+// console.log(firstName[2]);
+
+## Sets (it is iterable)
+
+// store data  
+// sets also have its own methods
+// No index-based access
+// Order is not guaranteed
+// unique items only (no duplicates allowed)
+
+## Map in js
+
+// map is an iterable so we can use for of loop directly
+
+// store data in ordered fashion
+
+// store key value pair (like object)
+// duplicate keys are not allowed like objects
+
+// different between maps and objects
+
+// objects can only have string or symbol
+// as key
+
+// in maps you can use anything as key
+// like array, number, string
+
+// object literal
+// key -> string
+// key -> symbol
+// const person = {
+// firstName : "harshit",
+// age: 7,
+// 1:"one"
+// }
+// // console.log(person.firstName);
+// // console.log(person["firstName"]);
+// // console.log(person[1]);
+// for(let key in person){
+// console.log(typeof key);
+// }
+
+// key value pair
+// const person = new Map();
+// person.set('firstName', 'Harshit');
+// person.set('age', 7);
+// person.set(1,'one');
+// person.set([1,2,3],'onetwothree');
+// person.set({1: 'one'},'onetwothree');
+// console.log(person);
+// console.log(person.get(1));
+// for(let key of person.keys()){
+// console.log(key, typeof key);
+// }
+// for(let [key, value] of person){
+// // console.log(Array.isArray(key));
+// console.log(key, value)
+// }
+
+const person1 = {
+id: 1,
+firstName: "harshit"
+}
+const person2 = {
+id: 2,
+firstName: "harshta"
+}
+
+const extraInfo = new Map();
+extraInfo.set(person1, {age: 8, gender: "male"});
+extraInfo.set(person2, {age: 9, gender: "female"});
+// console.log(userInfo);
+console.log(person1.id);
+console.log(extraInfo.get(person1).gender);
+console.log(extraInfo.get(person2).gender);
+
+## Object me for of loop nahi laga skte hai but for in loop laga skte hai
+
+## cloning method in js
+
+const obj = {
+key1: "value1",
+key2: "value2"
+}
+clone uisng spreed operator
+
+// const obj2 = {'key69': "value69",...obj};
+
+clone using Object.assign
+// const obj2 = Object.assign({'key69': "value69"}, obj);
+// obj.key3 = "value3";
+// console.log(obj);
+// console.log(obj2);
+
+## Optional Chaining
+
+?.
+agar apke pas properties abhi aceess nahi kr paa rahe hai but later so time we can access them use optional chaining so intead of giving error give them undefined
