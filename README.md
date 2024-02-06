@@ -392,11 +392,13 @@ const obj = {
 key1: "value1",
 key2: "value2"
 }
-clone uisng spreed operator
+
+clone using spreed operator
 
 // const obj2 = {'key69': "value69",...obj};
 
 clone using Object.assign
+
 // const obj2 = Object.assign({'key69': "value69"}, obj);
 // obj.key3 = "value3";
 // console.log(obj);
@@ -406,3 +408,7 @@ clone using Object.assign
 
 ?.
 agar apke pas properties abhi aceess nahi kr paa rahe hai but later so time we can access them use optional chaining so intead of giving error give them undefined
+
+## This Keyword
+
+It get reference to it outer lexical environment
