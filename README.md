@@ -412,3 +412,221 @@ agar apke pas properties abhi aceess nahi kr paa rahe hai but later so time we c
 ## This Keyword
 
 It get reference to it outer lexical environment
+
+## Crud using Fetch
+
+- Get Method
+  const dataFetching = async ()=>{const response = await fetch("https://jsonplaceholder.typicode.com/posts")
+  const data = await response.json()  
+  console.log("Data -->",data)
+  }
+  dataFetching()
+
+Data --> (100) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+
+- Post Method
+
+```js
+const postData = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    body: JSON.stringify({
+      title: "Lfoo",
+      body: "bar",
+      userId: 2,
+    }),
+    headers: {
+      "Content-type": "application/json ; charet= UTF-8",
+    },
+  });
+  const data = await res.json();
+  console.log("Posted Data -->", data);
+};
+postData();
+```
+
+Posted Data --> {title: 'Lfoo', body: 'bar', userId: 1, id: 101}
+
+- Put Method
+
+```js
+const putData = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts/2", {
+    method: "PUT",
+    body: JSON.stringify({
+      title: "lets",
+      body: "bar",
+      userId: 2,
+    }),
+    headers: {
+      "Content-type": "application/json ; charet= UTF-8",
+    },
+  });
+  const data = await res.json();
+  console.log("PUT Data -->", data);
+};
+putData();
+```
+
+PUT Data --> {title: 'lets', body: 'bar', userId: 2, id: 2}
+
+- Delete Method
+
+```js
+const dataDeleting = async () => {
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts/2", {
+    method: "DELETE",
+  });
+  const data = await response.json();
+  console.log("Data -->", data);
+};
+dataDeleting();
+```
+
+Data --> {}
+
+# Axios Tutorial
+
+#### React Course
+
+[My React Course](https://www.udemy.com/course/react-tutorial-and-projects-course/?referralCode=FEE6A921AF07E2563CEF)
+
+#### Support
+
+Find the App Useful? [You can always buy me a coffee](https://www.buymeacoffee.com/johnsmilga)
+
+#### Docs
+
+[Axios Docs](https://axios-http.com/docs/intro)
+
+#### Install
+
+```sh
+npm install axios
+```
+
+```js
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+```
+
+#### First Request
+
+- import axios
+
+- axios.get(url)
+- axios.post(url)
+- axios.patch/put(url)
+- axios.delete(url)
+
+- default get axios(url)
+
+- returns a promise
+- response data located in data property
+- error in error.response
+
+```js
+import axios from "axios";
+
+const fetchData = async () => {
+  try {
+    // axios.get(), axios.post(),axios.put(), axios.delete()
+    const response = await axios(url);
+
+    console.log(response);
+  } catch (error) {
+    console.log(error.response);
+  }
+};
+```
+
+#### Headers
+
+- second argument
+- axios.get(url,{})
+
+- third argument in requests with data
+- axios.post(url,{data},{})
+
+```js
+const fetchDadJoke = async () => {
+  try {
+    const { data } = await axios(url, {
+      headers: {
+        Accept: "application/json",
+      },
+    });
+    // console.log(data);
+    setJoke(data.joke);
+  } catch (error) {
+    console.log(error.response);
+  }
+};
+```
+
+#### Post Request
+
+- send data to the server
+- axios.post(url, { data })
+- more options (auth header) - axios.post(url, { data },{})
+
+```js
+try {
+  const resp = await axios.post(url, { data });
+} catch (error) {
+  console.log(error.response.data);
+}
+```
+
+#### Global Defaults
+
+```js
+axios.defaults.headers.common["Accept"] = "application/json";
+axios.defaults.baseURL = "https://api.example.com";
+axios.defaults.headers.common["Authorization"] = AUTH_TOKEN;
+axios.defaults.headers.post["Content-Type"] =
+  "application/x-www-form-urlencoded";
+```
+
+#### Custom Instance
+
+```js
+const authFetch = axios.create({
+  baseURL: "https://course-api.com",
+  headers: {
+    Accept: "application/json",
+  },
+});
+```
+
+#### Interceptors
+
+- global and custom
+
+```js
+authFetch.interceptors.request.use(
+  (request) => {
+    request.headers.common["Accept"] = `application/json`;
+    console.log("request sent");
+    // must return request
+    return request;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
+
+authFetch.interceptors.response.use(
+  (response) => {
+    console.log("got response");
+    return response;
+  },
+  (error) => {
+    console.log(error.response);
+    if (error.response.status === 404) {
+      // do something
+      console.log("NOT FOUND");
+    }
+    return Promise.reject(error);
+  }
+);
+```
