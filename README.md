@@ -1,5 +1,7 @@
 express --no-view . OR npx express-generator
 
+## If u wnat to use the import instead of require then u have to change package.json file and add type: "module",
+
 "# JS-Notes"
 
 Equality Operator
