@@ -1,10 +1,27 @@
 express --no-view . OR npx express-generator
 
-## If u wnat to use the import instead of require then u have to change package.json file and add type: "module",
+## If u want to use the import instead of require then u have to change package.json file and add type: "module",
 
-"# JS-Notes"
+# JS-Notes
 
-Equality Operator
+### call method
+
+- function borrowing
+  - If u want to borrow any funtion from another function into existing function u can use the call method
+    - i.e name.FunctionName.call(Fuction_Name_U_Borrow_From)
+  - first argument is refering to this and after that any arguments are just arguments which is commo separated
+
+### Apply method
+
+- There is no difference between call method and apply method just how u pass the argument
+- first argument is refering to this and after that any arguments are just arguments which is Array
+
+### Bind Method
+
+- Exactly same as call method but it copy that method
+
+### Equality Operator
+
 "=="
 checks types of both operands ,& if the type is same then it call "===" in case of (same type)
 id the type is different then conversions occurs (different type)
