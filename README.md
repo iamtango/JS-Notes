@@ -20,6 +20,15 @@ express --no-view . OR npx express-generator
 
 - Exactly same as call method but it copy that method
 
+### Debouncing
+
+- If the difference between 2 key stokes some milliseconds then make an api call
+
+### Throttling
+
+- Rate Limiting the fuction call
+- If the difference between 2 function call is some milliseconds then make an api call
+
 ### Equality Operator
 
 "=="
