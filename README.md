@@ -29,6 +29,18 @@ express --no-view . OR npx express-generator
 - Rate Limiting the fuction call
 - If the difference between 2 function call is some milliseconds then make an api call
 
+### Temporal deadzone
+
+- It is the time between the since when the let or const variable is hoisted to till it initalized some values this is called temporal deadzone
+
+### Closures
+
+- Function along with its lexical scope is called `closure`
+
+### First class citizen function
+
+- Function are the first class citizen of a function i.e getting a function as a argument and passing it to parameter or returning function from the function is called first class function
+
 ### Equality Operator
 
 "=="
