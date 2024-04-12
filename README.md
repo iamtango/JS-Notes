@@ -1,4 +1,4 @@
-express --no-view . OR npx express-generator
+# `express --no-view` . OR `npx express-generator`
 
 ## If u want to use the import instead of require then u have to change package.json file and add type: "module",
 
@@ -245,21 +245,22 @@ it takes 2 parameters i.e (accumulator, currentValue)
 at second time the value of the accumulator will be the value whih is returned by the function
 it is used to reduce and get one result
 
-const numbers = [1,2,3,4,5, 10];
+```js
+const numbers = [1, 2, 3, 4, 5, 10];
 
 // aim : sum of all the numbers in array
 
-// const sum = numbers.reduce((accumulator, currentValue)=>{
-// return accumulator + currentValue;
-// }, Initial value);
-
-// console.log(sum);
+ const sum = numbers.reduce((accumulator, currentValue)=>{
+ return accumulator + currentValue;
+ }, Initial value);
+ console.log(sum);
 // accumulator , currentValue, return
 // 1 2 3
 // 3 3 6
 // 6 4 10
 // 10 5 15
 // 15 10 25
+```
 
 ## Sort in array
 
@@ -267,13 +268,15 @@ it will change the array
 sort via ASCII code so work for alphabet nicely but not for num and in alphabetical order give high priority to Capital letters
 
 to sort no
-// const numbers = [5,9,1200, 410, 3000];
-// numbers.sort((a,b)=>{
-// return a-b;
-// });
-// numbers.sort((a,b)=>a-b);
-// console.log(numbers);
-eg
+
+```js
+const numbers = [5, 9, 1200, 410, 3000];
+numbers.sort((a, b) => {
+  return a - b;
+});
+numbers.sort((a, b) => a - b);
+console.log(numbers);
+eg;
 // 1200,410
 // a-b ---> 790
 // a-b ---> postive (greater than 0) ---> b, a
@@ -281,6 +284,7 @@ eg
 
 // a-b ---> negative ----> a,b
 // 5, 9 ---> -4
+```
 
 ## find in Array
 
@@ -297,48 +301,65 @@ just like every method in some method if any element in the array is true then i
 
 ## fill method in the array
 
-// const myArray = new Array(10).fill(0);
-// console.log(myArray);
+```js
+const myArray = new Array(10).fill(0);
+console.log(myArray);
 
-const myArray = [1,2,3,4,5,6,7,8];
+const myArray = [1, 2, 3, 4, 5, 6, 7, 8];
 // value , start , end
 
-myArray.fill(0,2,5);
+myArray.fill(0, 2, 5);
 console.log(myArray);
+```
 
 ## splice method
 
 it will not create new array and change the existing array
 & it will also return the deleted element
-// start , delete , insert
 
-const myArray = ['item1', 'item2', 'item3'];
+- start , delete , insert
 
-// delete
-// const deletedItem = myArray.splice(1, 2);
-// console.log("delted item", deletedItem);
-// insert
-// myArray.splice(1, 0,'inserted item');
+```js
+const myArray = ["item1", "item2", "item3"];
+```
 
-// insert and delete
-const deletedItem = myArray.splice(1, 2, "inserted item1", "inserted item2")
+- delete
+
+```js
+const deletedItem = myArray.splice(1, 2);
+console.log("delted item", deletedItem);
+```
+
+- insert
+
+```js
+myArray.splice(1, 0, "inserted item");
+```
+
+- insert and delete
+
+```js
+const deletedItem = myArray.splice(1, 2, "inserted item1", "inserted item2");
 console.log("delted item", deletedItem);
 console.log(myArray);
+```
 
 ## iterables
 
 jispe hum for of loop laga sakein
 string , array, Sets are iterable
 
-// const firstName = "Harshit";
-// for(let char of firstName){
-// console.log(char);
-// }
+```js
+const firstName = "Harshit";
+for (let char of firstName) {
+  console.log(char);
+}
 
-const items = ['item1', 'item2', 'item3'];
-// for(let item of items){
-// console.log(item);
-// }
+const items = ["item1", "item2", "item3"];
+for (let item of items) {
+  console.log(item);
+}
+```
 
 ## array like object
 
@@ -346,103 +367,110 @@ jinke pas length property hoti hai
 aur jiko hum index se access kar sakte hai
 example :- string
 
-// const firstName = "harshit";
-// console.log(firstName.length);
-// console.log(firstName[2]);
+```js
+const firstName = "harshit";
+console.log(firstName.length);
+console.log(firstName[2]);
+```
 
 ## Sets (it is iterable)
 
-// store data  
-// sets also have its own methods
-// No index-based access
-// Order is not guaranteed
-// unique items only (no duplicates allowed)
+- store data
+- sets also have its own methods
+- No index-based access
+- Order is not guaranteed
+- unique items only (no duplicates allowed)
 
 ## Map in js
 
-// map is an iterable so we can use for of loop directly
+- map is an iterable so we can use for of loop directly
+- store data in ordered fashion
+- store key value pair (like object)
+- duplicate keys are not allowed like objects
+- different between maps and objects
+- objects can only have string or symbol as key
 
-// store data in ordered fashion
+#### in maps you can use anything as key like array, number, string
 
-// store key value pair (like object)
-// duplicate keys are not allowed like objects
+- object literal
+- key -> string
+- key -> symbol
 
-// different between maps and objects
+```js const person = {
+firstName : "harshit",
+age: 7,
+1:"one"
+}
+// console.log(person.firstName);
+// console.log(person["firstName"]);
+// console.log(person[1]);
+for(let key in person){
+console.log(typeof key);
+}
+```
 
-// objects can only have string or symbol
-// as key
+- key value pair
 
-// in maps you can use anything as key
-// like array, number, string
-
-// object literal
-// key -> string
-// key -> symbol
-// const person = {
-// firstName : "harshit",
-// age: 7,
-// 1:"one"
-// }
-// // console.log(person.firstName);
-// // console.log(person["firstName"]);
-// // console.log(person[1]);
-// for(let key in person){
-// console.log(typeof key);
-// }
-
-// key value pair
-// const person = new Map();
-// person.set('firstName', 'Harshit');
-// person.set('age', 7);
-// person.set(1,'one');
-// person.set([1,2,3],'onetwothree');
-// person.set({1: 'one'},'onetwothree');
-// console.log(person);
-// console.log(person.get(1));
-// for(let key of person.keys()){
-// console.log(key, typeof key);
-// }
-// for(let [key, value] of person){
-// // console.log(Array.isArray(key));
-// console.log(key, value)
-// }
+```js
+const person = new Map();
+person.set("firstName", "Harshit");
+person.set("age", 7);
+person.set(1, "one");
+person.set([1, 2, 3], "onetwothree");
+person.set({ 1: "one" }, "onetwothree");
+console.log(person);
+console.log(person.get(1));
+for (let key of person.keys()) {
+  console.log(key, typeof key);
+}
+for (let [key, value] of person) {
+  // console.log(Array.isArray(key));
+  console.log(key, value);
+}
 
 const person1 = {
-id: 1,
-firstName: "harshit"
-}
+  id: 1,
+  firstName: "harshit",
+};
 const person2 = {
-id: 2,
-firstName: "harshta"
-}
+  id: 2,
+  firstName: "harshta",
+};
 
 const extraInfo = new Map();
-extraInfo.set(person1, {age: 8, gender: "male"});
-extraInfo.set(person2, {age: 9, gender: "female"});
+extraInfo.set(person1, { age: 8, gender: "male" });
+extraInfo.set(person2, { age: 9, gender: "female" });
 // console.log(userInfo);
 console.log(person1.id);
 console.log(extraInfo.get(person1).gender);
 console.log(extraInfo.get(person2).gender);
+```
 
 ## Object me for of loop nahi laga skte hai but for in loop laga skte hai
 
 ## cloning method in js
 
+```js
 const obj = {
-key1: "value1",
-key2: "value2"
-}
+  key1: "value1",
+  key2: "value2",
+};
+```
 
 clone using spreed operator
 
-// const obj2 = {'key69': "value69",...obj};
+```js
+const obj2 = { key69: "value69", ...obj };
+```
 
 clone using Object.assign
 
-// const obj2 = Object.assign({'key69': "value69"}, obj);
-// obj.key3 = "value3";
-// console.log(obj);
-// console.log(obj2);
+```js
+const obj2 = Object.assign({ key69: "value69" }, obj);
+obj.key3 = "value3";
+console.log(obj);
+console.log(obj2);
+```
 
 ## Optional Chaining
 
@@ -530,14 +558,6 @@ dataDeleting();
 Data --> {}
 
 # Axios Tutorial
-
-#### React Course
-
-[My React Course](https://www.udemy.com/course/react-tutorial-and-projects-course/?referralCode=FEE6A921AF07E2563CEF)
-
-#### Support
-
-Find the App Useful? [You can always buy me a coffee](https://www.buymeacoffee.com/johnsmilga)
 
 #### Docs
 
