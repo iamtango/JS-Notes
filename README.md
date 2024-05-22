@@ -694,3 +694,79 @@ authFetch.interceptors.response.use(
   }
 );
 ```
+
+Async fn alway return promise
+
+We cannot use arguments keyword inside arrow function, only in normal function, instead of arguments in arrow function use rest parameters 
+
+in default parameter only it change the default value of undefine not falsy value for example function sum (a,b=10){return a+b} sum(10)
+it work fine  which give result of 20 
+function sum (a,b=10){return a+b} sum(10)
+20
+// but in case the value of b is not undefine then it treat as value
+function sum(a, b=10){ return a+b} sum(10,"")
+'10'
+
+Debouncing
+Debouncing ensures that a function is only called once after a certain period of inactivity. In other words, the function will only execute after the user has stopped triggering the event for a specified amount of time.
+
+Use Case:
+
+Search input field: Send an API request only when the user has finished typing.
+Debouncing: Delays the function call until after a period of inactivity. Useful for scenarios where the action should only occur after the user has stopped performing an action (e.g., typing in a search box).
+
+
+Throttling
+Throttling ensures that a function is called at most once in a specified period. It executes the function at regular intervals, ignoring intermediate calls.
+Throttling: Ensures the function is called at regular intervals, ignoring intermediate calls. Useful for scenarios where an action should happen consistently at intervals while the user is performing an action (e.g., scrolling or resizing).
+
+
+import { useState, useMemo } from "react";
+
+function App() {
+  const [debouncing, setDebouncing] = useState("");
+  const [throttling, setThrottling] = useState("");
+
+  const ourDebounce = (fn, delay) => {
+    let timer;
+    return (...args) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        fn(...args);
+      }, delay);
+    };
+  };
+
+  const ourThrottle = (fn, delay) => {
+    let timer;
+    return (...args) => {
+      if (!timer) {
+        fn(...args);
+        timer = setTimeout(() => {
+          timer = null;
+        }, delay);
+      }
+    };
+  };
+
+  const handlechange1 = (e) => {
+    setDebouncing(e.target.value);
+    console.log(e.target.value);
+  };
+  const handlechange2 = (e) => {
+    setThrottling(e.target.value);
+    console.log(e.target.value);
+  };
+  const debouncedChange = useMemo(() => ourDebounce(handlechange1, 3000), []);
+  const throttleChange = useMemo(() => ourThrottle(handlechange2, 1000), []);
+  return (
+    <>
+      <input onChange={debouncedChange} />
+      <input onChange={throttleChange} />
+      <div>Debouncing:- {debouncing}</div>
+      <div>throttling:- {throttling}</div>
+    </>
+  );
+}
+
+export default App;
