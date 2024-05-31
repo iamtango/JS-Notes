@@ -789,3 +789,6 @@ function App() {
 
 export default App;
 ```
+### Type = `module`
+- Benifits of type module are, automatically use `defer` & `use strict` mode  behind the scene
+#### Import statements first import the modules and execute and store in memory then  run that file code 
