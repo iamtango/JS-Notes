@@ -796,6 +796,56 @@ export default App;
 
 #### Import statements first import the modules and execute and store in memory then run that file code
 
+#### Logical operator gives truthy and falsy value in the result (i.e && || !)
+
+#### Object.seal(Object_name) it is use when we donot want to modefiy the object by adding or deleting the existing values but it can change the value of existing key
+#### Object.freeze(Object_name) it is same as Object.seal(Object_name) but in that u can't able to change the exiting value of the object
+
+#### Shallow copy is something that only one level of the object can only be copied, but at the time of other nested objects inside that perticular object the object change
+
+#### Const and let are in the temporal death zone until its variables don't assign anything till ( !=undefine)
+
+#### for of loop is use for Arrays and for in loop use for Objects
+
+
+document.getElementsByTagName("") give all the list of htmlcollection
+document.getElementsByClassName("") give all the list of htmlcollection
+document.getElementById("") give Only first element
+document.images("") is specially use to give all images of dom
+doucument.querySelector("") give first element
+doucument.querySelectorAll("") give all element in NodeList
+
+.innerHTML give the element in the html format
+.innerText give the element's content only which is visible on browser
+.textContent gives all the element content including which is hidden also considering spaces as well
+
+### Event Delegation
+
+- Event delegation is a technique where a single event listener is added to a parent element to manage events for multiple child elements. This optimizes memory usage and improves performance by reducing the number of event listeners attached to the DOM.
+- Event delegation help to optimise memory usage and page load by applying event listeners on parent elements
+
+### Event Capturing (Trickling):
+
+- When you click on the .child element, the event first goes through the capturing phase.
+- The event listeners with true as the third argument (capturing phase) will log messages as the event trickles down from .grandparent to .child.
+
+### Event Bubbling:
+
+- After the event reaches the target element (.child), it starts bubbling up.
+- The event listeners without the third argument (default is false for bubbling) will log messages as the event bubbles up from .child to .grandparent.
+
+### Stopping Propagation:
+
+- The e.stopPropagation() method is called in one of the .child event listeners.
+- This stops the event from bubbling up to the .parent and .grandparent elements.
+
+#### Promises only settle for one time only
+
+Micro task queue has more properties than callback queues
+In microtask queue it has only promises and mutationObjects only
+
+await keyword make wait for below code to execude while .then does not and execute below code
+
 # `Akshay Saini's Namaste JS Notes 👇🏻`
 
 ## title: Namaste JavaScript
