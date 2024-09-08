@@ -1,5 +1,41 @@
 # `express --no-view` . OR `npx express-generator`
 
+## Project List
+
+| S.No | Project Name                     | Description                                                                 | Link                                                                           |
+| ---- | -------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| 1.   | accordion                        | An accordion using JavaScript and CSS that opens and closed on click event. | [ 🔗](javascripts-machine-coding-challenges/accordion/)                        |
+| 2.   | analog-clock                     | A simple analog clock using JavaScript and CSS.                             | [ 🔗](javascripts-machine-coding-challenges/analog-clock/)                     |
+| 3.   | carousel                         | Image carousel with next and previous navigation.                           | [ 🔗](javascripts-machine-coding-challenges/carousel/)                         |
+| 4.   | contact-form                     | Basic contact form with form validation.                                    | [ 🔗](javascripts-machine-coding-challenges/contact-form/)                     |
+| 5.   | countdown                        | Countdown timer for events or deadlines.                                    | [ 🔗](javascripts-machine-coding-challenges/Countdwn/)                         |
+| 6.   | counter                          | Simple counter with increment and decrement functionality.                  | [ 🔗](javascripts-machine-coding-challenges/counter/)                          |
+| 7.   | custom-dropdown                  | Dropdown menu with custom styling and options.                              | [ 🔗](javascripts-machine-coding-challenges/custom-dropdown/)                  |
+| 8.   | data-board                       | Interactive data board for displaying data sets.                            | [ 🔗](javascripts-machine-coding-challenges/data-board/)                       |
+| 9.   | digital-clock                    | Digital clock displaying the current time.                                  | [ 🔗](javascripts-machine-coding-challenges/digital-clock/)                    |
+| 10.  | drag-and-drop                    | Drag and drop functionality for items within a container.                   | [ 🔗](javascripts-machine-coding-challenges/drag-and-drop/)                    |
+| 11.  | generate-table                   | Dynamically generate tables based on user input.                            | [ 🔗](javascripts-machine-coding-challenges/generate-table/)                   |
+| 12.  | grail                            | Example of a responsive Grail layout using vanilla CSS and JS.              | [ 🔗](javascripts-machine-coding-challenges/grail/)                            |
+| 13.  | infinite-scroll                  | Infinite scroll implementation for loading more content.                    | [ 🔗](javascripts-machine-coding-challenges/infinite-scroll/)                  |
+| 14.  | installment-calculator           | Calculator for computing loan installments.                                 | [ 🔗](javascripts-machine-coding-challenges/instalment-calculator/)            |
+| 15.  | like-button                      | A like button with state management and animation.                          | [ 🔗](javascripts-machine-coding-challenges/like-button/)                      |
+| 16.  | list-filter                      | Filter items in a list based on search criteria.                            | [ 🔗](javascripts-machine-coding-challenges/list-filter/)                      |
+| 17.  | modal-popup                      | Reusable modal popup component.                                             | [ 🔗](javascripts-machine-coding-challenges/modal-popup/)                      |
+| 18.  | multi-step-form-validation-check | Multi-step form with validation checks at each step.                        | [ 🔗](javascripts-machine-coding-challenges/multi-step-form-validation-check/) |
+| 19.  | navbar                           | Responsive navigation bar with dropdowns.                                   | [ 🔗](javascripts-machine-coding-challenges/navbar/)                           |
+| 20.  | progress-bar                     | Progress bar to show task or process completion.                            | [ 🔗](javascripts-machine-coding-challenges/progress-bar/)                     |
+| 21.  | signup-form                      | User signup form with validation and submission.                            | [ 🔗](javascripts-machine-coding-challenges/signup-form/)                      |
+| 22.  | star-rating                      | Star-based rating system for feedback.                                      | [ 🔗](javascripts-machine-coding-challenges/star-rating/)                      |
+| 23.  | stopwatch                        | Simple stopwatch with start, stop, and reset functionality.                 | [ 🔗](javascripts-machine-coding-challenges/stopwtch/)                         |
+| 24.  | tabs                             | Tab component to switch between different content sections.                 | [ 🔗](javascripts-machine-coding-challenges/tabs/)                             |
+| 25.  | temperature-calculator           | Convert temperatures between different units.                               | [ 🔗](javascripts-machine-coding-challenges/temperature-calculator/)           |
+| 26.  | theme-mode                       | Toggle between dark and light mode with local storage integration           | [ 🔗](javascripts-machine-coding-challenges/theme-mode/)                       |
+| 27.  | to-do-list                       | Task management app with CRUD operations.                                   | [ 🔗](javascripts-machine-coding-challenges/to-do-list/)                       |
+| 28.  | traffic                          | Simulate traffic light system using JavaScript.                             | [ 🔗](javascripts-machine-coding-challenges/traffic/)                          |
+| 29.  | tweet                            | Simple tweet box with character count limit.                                | [ 🔗](javascripts-machine-coding-challenges/tweet/)                            |
+| 30   | virtualized-list                 | Efficiently render long lists with virtual scrolling.                       | [ 🔗](javascripts-machine-coding-challenges/virtualized-list/)                 |
+| 31.  | weather-app                      | Application to fetch and display weather information.                       | [ 🔗](javascripts-machine-coding-challenges/weather-app/)                      |
+
 ## If u want to use the import instead of require then u have to change package.json file and add type: "module",
 
 # JS-Notes
