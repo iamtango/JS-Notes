@@ -35,6 +35,55 @@
 | 29.  | tweet                            | Simple tweet box with character count limit.                                | [ 🔗](javascripts-machine-coding-challenges/tweet/)                            |
 | 30   | virtualized-list                 | Efficiently render long lists with virtual scrolling.                       | [ 🔗](javascripts-machine-coding-challenges/virtualized-list/)                 |
 | 31.  | weather-app                      | Application to fetch and display weather information.                       | [ 🔗](javascripts-machine-coding-challenges/weather-app/)                      |
+| 33.  | 3d-boxes-background              | Interactive 3D boxes background with CSS animations.                        | [ 🔗](javascripts-machine-coding-challenges/3d-boxes-background/)              |
+| 34.  | animated-countdown               | Countdown timer with smooth animation transitions.                          | [ 🔗](javascripts-machine-coding-challenges/animated-countdown/)               |
+| 35.  | animated-navigation              | Navigation menu with dynamic animations.                                    | [ 🔗](javascripts-machine-coding-challenges/animated-navigation/)              |
+| 36.  | auto-text-effect                 | Text typing effect that simulates typing.                                   | [ 🔗](javascripts-machine-coding-challenges/auto-text-effect/)                 |
+| 37.  | background-slider                | Slider that changes background images dynamically.                          | [ 🔗](javascripts-machine-coding-challenges/background-slider/)                |
+| 38.  | blurry-loading                   | Loading effect that transitions from blur to clear.                         | [ 🔗](javascripts-machine-coding-challenges/blurry-loading/)                   |
+| 39.  | content-placeholder              | Placeholder content while data is loading.                                  | [ 🔗](javascripts-machine-coding-challenges/content-placeholder/)              |
+| 40.  | custom-range-slider              | Custom styled range input slider.                                           | [ 🔗](javascripts-machine-coding-challenges/custom-range-slider/)              |
+| 41.  | dad-jokes                        | Generates random dad jokes using an API.                                    | [ 🔗](javascripts-machine-coding-challenges/dad-jokes/)                        |
+| 42.  | double-click-heart               | Like button animation triggered by double-click.                            | [ 🔗](javascripts-machine-coding-challenges/double-click-heart/)               |
+| 43.  | double-vertical-slider           | Image slider with dual vertical panels.                                     | [ 🔗](javascripts-machine-coding-challenges/double-vertical-slider/)           |
+| 44.  | drag-n-drop                      | Drag and drop functionality for interactive lists.                          | [ 🔗](javascripts-machine-coding-challenges/drag-n-drop/)                      |
+| 45.  | drawing-app                      | Basic drawing application using canvas.                                     | [ 🔗](javascripts-machine-coding-challenges/drawing-app/)                      |
+| 46.  | drink-water                      | App to remind you to drink water throughout the day.                        | [ 🔗](javascripts-machine-coding-challenges/drink-water/)                      |
+| 47.  | event-keycodes                   | Displays keycodes for keyboard events.                                      | [ 🔗](javascripts-machine-coding-challenges/event-keycodes/)                   |
+| 48.  | expanding-cards                  | Expanding card layout for showcasing content.                               | [ 🔗](javascripts-machine-coding-challenges/expanding-cards/)                  |
+| 49.  | faq-collapse                     | Collapsible FAQ section for streamlined user experience.                    | [ 🔗](javascripts-machine-coding-challenges/faq-collapse/)                     |
+| 50.  | feedback-ui-design               | User feedback form with interactive UI.                                     | [ 🔗](javascripts-machine-coding-challenges/feedback-ui-design/)               |
+| 51.  | fixed-navbar                     | Fixed navigation bar that remains on scroll.                                | [ 🔗](javascripts-machine-coding-challenges/fixed-navbar/)                     |
+| 52.  | form-input-wave                  | Form input with wave animation on focus.                                    | [ 🔗](javascripts-machine-coding-challenges/form-input-wave/)                  |
+| 53.  | github-profile                   | Fetches and displays GitHub profile information.                            | [ 🔗](javascripts-machine-coding-challenges/github-profile/)                   |
+| 54.  | good-cheap-fast                  | Selector for prioritizing good, cheap, and fast options.                    | [ 🔗](javascripts-machine-coding-challenges/good-cheap-fast/)                  |
+| 55.  | hidden-search                    | Search input that expands when clicked.                                     | [ 🔗](javascripts-machine-coding-challenges/hidden-search/)                    |
+| 56.  | hoverboard                       | Interactive board with hover effects.                                       | [ 🔗](javascripts-machine-coding-challenges/hoverboard/)                       |
+| 57.  | image-carousel                   | Carousel for cycling through images.                                        | [ 🔗](javascripts-machine-coding-challenges/image-carousel/)                   |
+| 58.  | incrementing-counter             | Counter that increments numbers dynamically.                                | [ 🔗](javascripts-machine-coding-challenges/incrementing-counter/)             |
+| 59.  | insect-catch-game                | Game where you catch insects on the screen.                                 | [ 🔗](javascripts-machine-coding-challenges/insect-catch-game/)                |
+| 60.  | kinetic-loader                   | Animated kinetic loader for page loading.                                   | [ 🔗](javascripts-machine-coding-challenges/kinetic-loader/)                   |
+| 61.  | live-user-filter                 | Filters user data in real-time.                                             | [ 🔗](javascripts-machine-coding-challenges/live-user-filter/)                 |
+| 62.  | mobile-tab-navigation            | Mobile-friendly tab navigation component.                                   | [ 🔗](javascripts-machine-coding-challenges/mobile-tab-navigation/)            |
+| 63.  | movie-app                        | App to search and display movie information.                                | [ 🔗](javascripts-machine-coding-challenges/movie-app/)                        |
+| 64.  | netflix-navigation               | Netflix-style navigation menu.                                              | [ 🔗](javascripts-machine-coding-challenges/netflix-navigation/)               |
+| 65.  | note-app                         | Simple note-taking application.                                             | [ 🔗](javascripts-machine-coding-challenges/note-app/)                         |
+| 66.  | password-generator               | Generates random passwords with various criteria.                           | [ 🔗](javascripts-machine-coding-challenges/password-generator/)               |
+| 67.  | password-strength-background     | Changes background based on password strength.                              | [ 🔗](javascripts-machine-coding-challenges/password-strength-background/)     |
+| 68.  | pokedex                          | Displays information about Pokémon using an API.                            | [ 🔗](javascripts-machine-coding-challenges/pokedex/)                          |
+| 69.  | progress-steps                   | Progress indicator for multi-step processes.                                | [ 🔗](javascripts-machine-coding-challenges/progress-steps/)                   |
+| 70.  | quiz-app                         | Application to create and take quizzes.                                     | [ 🔗](javascripts-machine-coding-challenges/quiz-app/)                         |
+| 71.  | random-choice-picker             | Randomly picks an option from a list of choices.                            | [ 🔗](javascripts-machine-coding-challenges/random-choice-picker/)             |
+| 72.  | random-image-feed                | Displays a feed of random images using an API.                              | [ 🔗](javascripts-machine-coding-challenges/random-image-feed/)                |
+| 73.  | ripple-effect                    | Button with ripple click effect.                                            | [ 🔗](javascripts-machine-coding-challenges/ripple-effect/)                    |
+| 74.  | rotating-nav-animation           | Navigation menu with rotating animation.                                    | [ 🔗](javascripts-machine-coding-challenges/rotating-nav-animation/)           |
+| 75.  | scroll-animation                 | Animations triggered by scroll events.                                      | [ 🔗](javascripts-machine-coding-challenges/scroll-animation/)                 |
+| 76.  | sound-board                      | Sound board with various audio clips.                                       | [ 🔗](javascripts-machine-coding-challenges/sound-board/)                      |
+| 77.  | split-landing-page               | Split screen layout for landing pages.                                      | [ 🔗](javascripts-machine-coding-challenges/split-landing-page/)               |
+| 78.  | testimonial-box-switcher         | Switches between different testimonial boxes.                               | [ 🔗](javascripts-machine-coding-challenges/testimonial-box-switcher/)         |
+| 79.  | theme-clock                      | Clock with customizable themes.                                             | [ 🔗](javascripts-machine-coding-challenges/theme-clock/)                      |
+| 80.  | toast-notification               | Toast notifications for alerts and messages.                                | [ 🔗](javascripts-machine-coding-challenges/toast-notification/)               |
+| 81.  | verify-account-ui                | UI for account verification processes.                                      | [ 🔗](javascripts-machine-coding-challenges/verify-account-ui/)                |
 
 ## If u want to use the import instead of require then u have to change package.json file and add type: "module",
 
