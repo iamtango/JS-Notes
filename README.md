@@ -4340,3 +4340,49 @@ Here's the combined list of JavaScript interview preparation topics, including b
 - **WeakMap**: A Map-like collection where keys are objects that allows the garbage collection of key-value pairs if the key object is no longer referenced elsewhere.
 
 This comprehensive list covers essential JavaScript topics and methods, ensuring thorough preparation for interviews.
+
+## Children
+
+- If we write anything inside the element <example> </example> then it can be accessed by using the children prop or we can write children prop aswell
+
+### useLocation()
+
+- when we pass state as prop while using Link component then useLocation() hook give able to access the prop on that perticular URL
+
+### We can't send any props to the outlet but we can sent the `context ` prop and it can be accessable by all the components inside the outlet and we have to use `useOutletConext()` wherever we wanted to use
+
+## css modules
+
+- css is apply on app page if u want specific styles to specific components then use `{name}.module.css`
+
+Array me sirf array element and string ko hi spread kr skte object ko nahi but object me sab kuch spread kr skte hai
+spead operator array/obj/string ko spread krta hai while rest operator array/obj/string ko collect krta hai rest params houd be pass as at the last
+
+inline element pr height and width apply nahi hoti hai
+and padding only work from left and right and can be over the element from the top and bottom
+also same for border a padding
+by default position static
+but when position relative then it will just move from current position
+position absolute then then it first aatach to view port or its parents positon other than static
+position fixed also work same as absoulte but o nly connected to viewport only and sticky work same as relative but need overflow scroll to use
+sticky parent ke bher nahi jata
+we cant set height and weight in inline element but use in block element so we can use inline-block
+use flex-basis instead of width it will be better in case of flex direction changes to row to column it automatically changes
+float == position: absolute just one diff is that in float the text can never be below another element
+display: flow-root
+
+# CSS Grid Properties
+
+display:grid;
+grid-template-rows: none;
+grid-template-columns: none;
+column-gap: normal;
+row-gap: normal;
+
+grid-column-start: auto;
+grid-column-end: auto;
+grid-row-start: auto;
+grid-row-end: auto;
+
+grid-template-areas: none;
+gird-area:
